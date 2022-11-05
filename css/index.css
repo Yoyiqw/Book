@@ -403,6 +403,17 @@ h1, h2, h2, h3, h4, h5, h6, p, ul {
     margin-top: 140px;
   }
 }
+@media screen and (max-width: 410px) {
+  .hero__description_3 {
+    margin-top: 190px;
+  }
+  .hero__img {
+    margin-top: 100px;
+  }
+  .hero__description_2 {
+    margin-top: 140px;
+  }
+}
 .footer__bg {
   background: #F5F5F5;
   width: 100%;

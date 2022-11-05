@@ -168,3 +168,17 @@
         }
     }
 }
+
+@media screen and (max-width:410px) {
+    .hero {
+        &__description_3{
+            margin-top: 190px;
+        }
+        &__img{
+            margin-top: 100px;
+        }
+        &__description_2{
+            margin-top: 140px;
+        }
+    }
+}
