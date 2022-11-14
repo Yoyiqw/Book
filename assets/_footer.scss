@@ -1,66 +1,76 @@
 .footer{
-    &__bg{
-        background: #F5F5F5;
-        width: 100%;
-        height: auto;
-        margin-top: 27px;
-    }
-    &__img{
-        padding: 31px 0px 30px 0px;
-        width: 155px;
-        height: 84px;
-    }
+    padding-bottom: 34px;
+    margin-top: 24px;
+
+    background: #F5F5F5;
     &__row{
         display: flex;
+        padding-top: 27px;
     }
-    &__list{
-        text-align: center;
-        display: flex;
-        align-items: center;
-        margin-left: 69px;
-    }
-    &__rom{
+    &__li{
         display: flex;
         align-items: center;
     }
-    &__item{
-        margin: 0px 36px 0px 0px;
+    &__info{
+        cursor: pointer;
+        @include font (400, 18px,#4F4F4F);
+        margin-left:  45px;
     }
-    &__svg{
-        margin-left: 63px;
+    &__img{
+        cursor: pointer;
+        max-width: 155px;
+        height: 84px;
+    }
+    &__phone{
+        cursor: pointer;
+        @include font (500, 18px, #606060);
+        margin-left: 34px;
+    }
+    &__icon{
+        margin-right: 13px;
     }
 }
-
-@media screen and (max-width:1770px) {
+@media screen and (max-width:1202px) {
     .footer{
-        &__item{
-            font-size: 13px;
+        &__info{
+            font-size: 15px;
+        }
+        
+        &__phone{
+            font-size: 15px;
         }
     }
 }
 
-@media screen and (max-width:1087px) {
+@media screen and (max-width:1160px) {
     .footer{
-        &__item{
-            font-size: 13px;
-            margin-top: 13px;
-        }
         &__row{
-            display: block;
-            text-align: center
+            flex-direction: column;
+            align-items: center;
         }
-        &__list{
-            display: block;
-            margin-left: 40px;
+        &__li{
+            margin-top: 20px;
         }
-        &__rom{
-            justify-content: center;
-            margin: 26px 63px 0px 0px;
-            padding-bottom: 20px;
-        }
-        &__img{
-            width: 100px;        
-            height: 54px;
     }
+}
+
+@media screen and (max-width:956px) {
+    .footer{
+        &__row{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__li{
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        &__info{
+            margin: 15px 0px 0px 0px ;
+            font-size: 18px;
+        }
+        &__phone{
+            margin: 15px 0px 0px 0px;
+            font-size: 18px;
+        }   
     }
 }
